@@ -1,0 +1,116 @@
+@use "./vars" as *;
+
+.landing {
+  background-image: url("../../images/banner-bg.jpg");
+  width: 100%;
+  height: fit-content;
+  background-position: right bottom;
+  background-size: cover;
+  padding: 120px 0;
+  .container {
+    .row {
+      .col-12 {
+        .carousel {
+          .control-carousel {
+            height: 50px;
+            width: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba($color: $white-color, $alpha: 0.25);
+            border-radius: 50%;
+            @media (max-width: 576px) {
+              top: unset;
+              bottom: 50px;
+              &.carousel-control-prev {
+                left: 100px;
+              }
+              &.carousel-control-next {
+                right: 100px;
+              }
+            }
+          }
+          .carousel-inner {
+            .carousel-item {
+              img {
+                height: calc(100vh - 120px);
+                border-radius: 25px;
+                object-fit: cover;
+                object-position: bottom right;
+                display: block;
+                width: 100%;
+              }
+              .carousel-caption {
+                width: 100%;
+                padding: 20px 90px;
+                top: 0;
+                color: white;
+                left: 0;
+                text-align: start;
+                @media (max-width: 992px) {
+                  padding: 20px 70px 0 70px;
+                }
+                @media (max-width: 576px) {
+                  padding: 0 10px;
+                  text-align: center;
+                }
+                > button {
+                  display: block;
+                  background-color: $main-color;
+                  margin: 0 0 7rem 0;
+                  @media (max-width: 576px) {
+                    margin-left: 0 auto;
+                    display: none;
+                  }
+
+                  &:hover {
+                    background-color: rgba($color: $main-color, $alpha: 0.75);
+                  }
+                }
+                h1 {
+                  font-weight: 900;
+                  margin: 3rem 0;
+                  @media (max-width: 576px) {
+                    width: 100%;
+                    padding: 0 10px;
+                    text-align: center;
+                  }
+                }
+                p.desc {
+                  max-width: 700px;
+                  @media (max-width: 576px) {
+                    width: 100%;
+                    padding: 0 10px;
+                    text-align: center;
+                  }
+                }
+                .buttons {
+                  button {
+                    background-color: $white-color;
+                    color: $main-color;
+                    transition: 0.3s;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    &:last-of-type {
+                      margin-right: 10px !important;
+                    }
+
+                    &:hover {
+                      color: $white-color;
+                      background-color: $main-color;
+                    }
+                  }
+                  @media (max-width: 576px) {
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-around;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

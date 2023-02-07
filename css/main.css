@@ -1,0 +1,225 @@
+.header {
+  position: absolute;
+  width: 100%;
+}
+.header .navbar {
+  width: 100%;
+}
+.header .navbar .navbar-collapse {
+  z-index: 999;
+}
+.header .navbar .navbar-collapse .navbar-nav {
+  background-color: #7a6ad8;
+  border-radius: 10px;
+}
+.header .navbar .nav-item {
+  text-align: center;
+}
+.header .navbar .nav-item .nav-link {
+  color: white;
+}
+.header .navbar .nav-item .nav-link.active, .header .navbar .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.header .navbar .logo-search .navbar-brand {
+  font-weight: 900;
+  color: white;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+.header .navbar .navbar-toggler {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+.header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.header .navbar .navbar-toggler[aria-expanded=true] .trigger-icon > span.trigger-icon-top {
+  width: 100%;
+  top: 10px;
+  rotate: 45deg;
+}
+.header .navbar .navbar-toggler[aria-expanded=true] .trigger-icon > span.trigger-icon-center {
+  width: 0%;
+}
+.header .navbar .navbar-toggler[aria-expanded=true] .trigger-icon > span.trigger-icon-bottom {
+  width: 100%;
+  top: 10px;
+  rotate: -45deg;
+}
+.header .navbar .navbar-toggler .trigger-icon {
+  position: relative;
+  width: 40px;
+  height: 15px;
+  box-shadow: none;
+}
+.header .navbar .navbar-toggler .trigger-icon span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  background-color: #fff;
+}
+.header .navbar .navbar-toggler .trigger-icon span.trigger-icon-top {
+  top: 0;
+  left: 0;
+  width: 70%;
+}
+.header .navbar .navbar-toggler .trigger-icon span.trigger-icon-center {
+  top: 10px;
+  left: 0;
+}
+.header .navbar .navbar-toggler .trigger-icon span.trigger-icon-bottom {
+  top: 20px;
+  left: 0;
+  width: 70%;
+}
+.header .navbar .search-bar {
+  position: relative;
+}
+.header .navbar .search-bar form .field {
+  display: flex;
+}
+.header .navbar .search-bar form .field .form-control {
+  color: #fff;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+}
+.header .navbar .search-bar form .field .form-control::placeholder {
+  color: #fff;
+}
+.header .navbar .search-bar form .field .search-icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+.header .navbar .search-bar form .field .search-icon > i {
+  display: block;
+}
+
+.landing {
+  background-image: url("../../images/banner-bg.jpg");
+  width: 100%;
+  height: fit-content;
+  background-position: right bottom;
+  background-size: cover;
+  padding: 120px 0;
+}
+.landing .container .row .col-12 .carousel .control-carousel {
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .control-carousel {
+    top: unset;
+    bottom: 50px;
+  }
+  .landing .container .row .col-12 .carousel .control-carousel.carousel-control-prev {
+    left: 100px;
+  }
+  .landing .container .row .col-12 .carousel .control-carousel.carousel-control-next {
+    right: 100px;
+  }
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item img {
+  height: calc(100vh - 120px);
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: bottom right;
+  display: block;
+  width: 100%;
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption {
+  width: 100%;
+  padding: 20px 90px;
+  top: 0;
+  color: white;
+  left: 0;
+  text-align: start;
+}
+@media (max-width: 992px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption {
+    padding: 20px 70px 0 70px;
+  }
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption {
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption > button {
+  display: block;
+  background-color: #7a6ad8;
+  margin: 0 0 7rem 0;
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption > button {
+    margin-left: 0 auto;
+    display: none;
+  }
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption > button:hover {
+  background-color: rgba(122, 106, 216, 0.75);
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+  font-weight: 900;
+  margin: 3rem 0;
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption h1 {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption p.desc {
+  max-width: 700px;
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption p.desc {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption .buttons button {
+  background-color: #fff;
+  color: #7a6ad8;
+  transition: 0.3s;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption .buttons button:last-of-type {
+  margin-right: 10px !important;
+}
+.landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption .buttons button:hover {
+  color: #fff;
+  background-color: #7a6ad8;
+}
+@media (max-width: 576px) {
+  .landing .container .row .col-12 .carousel .carousel-inner .carousel-item .carousel-caption .buttons {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+body {
+  height: 1000px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

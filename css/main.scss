@@ -1,0 +1,9 @@
+@use "./scss/vars" as *;
+@use "./scss/navbar";
+@use "./scss/landing";
+
+body {
+  height: 1000px;
+  // background-color: rgb(202, 29, 202);
+  font-family: 'Roboto', sans-serif;
+}
