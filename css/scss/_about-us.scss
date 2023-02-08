@@ -1,0 +1,26 @@
+@use "./vars" as *;
+.about-us {
+  margin-bottom: 10rem;
+  background-color: $card-color;
+  .container {
+    .row {
+      .col-12 {
+        background-color: $main-color;
+        padding: 1rem;
+        border-radius: 20px;
+        .test {
+          button {
+            background-color: $white-color;
+            width: 100%;
+            text-align: start;
+          }
+          .collapse {
+            .description {
+              background-color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

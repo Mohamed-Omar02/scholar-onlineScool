@@ -1,0 +1,58 @@
+@use "./vars" as *;
+section {
+  .services {
+    margin: 20rem 0 10rem ;
+    .container {
+      .row {
+        > div {
+          position: relative;
+          margin-bottom: 8rem;
+
+          .icon {
+            width: 170px;
+            height: 170px;
+            background-color: $main-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 80px;
+            transform: translate(50%, -50%);
+            &:hover {
+              > img {
+                transform: translate(50%, calc(-50% - 10px));
+              }
+            }
+            img {
+              position: absolute;
+              top: 50%;
+              right: 50%;
+              transform: translate(50%, -50%);
+              line-height: 170px;
+              transition: $main-trans;
+            }
+          }
+          .card-text {
+            background-color: $card-color;
+            border-radius: 20px;
+            padding: 20px;
+            margin-right: 80px;
+            padding-top: 80px;
+            p {
+              max-width: 90%;
+              color: $p-color;
+            }
+            > button {
+              background-color: $white-color;
+              color: $main-color;
+              transition: $main-trans;
+              &:hover {
+                color: $white-color;
+                background-color: $main-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

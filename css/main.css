@@ -104,6 +104,73 @@
   display: block;
 }
 
+section .services {
+  margin: 20rem 0 10rem;
+}
+section .services .container .row > div {
+  position: relative;
+  margin-bottom: 8rem;
+}
+section .services .container .row > div .icon {
+  width: 170px;
+  height: 170px;
+  background-color: #7a6ad8;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 80px;
+  transform: translate(50%, -50%);
+}
+section .services .container .row > div .icon:hover > img {
+  transform: translate(50%, calc(-50% - 10px));
+}
+section .services .container .row > div .icon img {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  line-height: 170px;
+  transition: 0.3s;
+}
+section .services .container .row > div .card-text {
+  background-color: #f1f0fe;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 80px;
+  padding-top: 80px;
+}
+section .services .container .row > div .card-text p {
+  max-width: 90%;
+  color: #4a4a4a;
+}
+section .services .container .row > div .card-text > button {
+  background-color: #fff;
+  color: #7a6ad8;
+  transition: 0.3s;
+}
+section .services .container .row > div .card-text > button:hover {
+  color: #fff;
+  background-color: #7a6ad8;
+}
+
+.about-us {
+  margin-bottom: 10rem;
+  background-color: #f1f0fe;
+}
+.about-us .container .row .col-12 {
+  background-color: #7a6ad8;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.about-us .container .row .col-12 .test button {
+  background-color: #fff;
+  width: 100%;
+  text-align: start;
+}
+.about-us .container .row .col-12 .test .collapse .description {
+  background-color: #fff;
+}
+
 .landing {
   background-image: url("../../images/banner-bg.jpg");
   width: 100%;
@@ -218,7 +285,6 @@
 }
 
 body {
-  height: 1000px;
   font-family: "Roboto", sans-serif;
 }
 
