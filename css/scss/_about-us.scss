@@ -1,22 +1,56 @@
 @use "./vars" as *;
 .about-us {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   background-color: $card-color;
   .container {
     .row {
-      .col-12 {
+      .col-12.accordionn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         background-color: $main-color;
         padding: 1rem;
         border-radius: 20px;
-        .test {
-          button {
-            background-color: $white-color;
-            width: 100%;
-            text-align: start;
+        .accordion {
+          .accordion-item {
+            border-radius: 20px;
+            &:not(:last-of-type) {
+              margin-bottom: 20px;
+            }
+            .accordion-button {
+              border-radius: 20px;
+              color: $black-color;
+              border: 0;
+              font-weight: bold;
+              transition: color $main-trans;
+              &:focus {
+                box-shadow: none;
+              }
+              &:not(.collapsed) {
+                background-color: transparent;
+                color: $main-color;
+              }
+            }
           }
-          .collapse {
-            .description {
-              background-color: $white-color;
+        }
+      }
+      .col-12.text {
+        .container {
+          > h6 {
+            color: $main-color;
+          }
+          > h2 {
+            font-weight: 900;
+            font-size: 2.5rem;
+          }
+          > p {
+            color: $p-color;
+          }
+          > button {
+            background-color: $main-color;
+            color: $white-color;
+            &:hover {
+              background-color: rgba($color: $main-color, $alpha: 0.75);
             }
           }
         }

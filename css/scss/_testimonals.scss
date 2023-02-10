@@ -1,0 +1,68 @@
+@use "./vars" as *;
+
+.testimonals {
+  position: relative;
+  padding: 75px 0 75px 75px;
+  margin-bottom: 10rem;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $card-color;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    border-top-left-radius: 600px;
+    border-bottom-left-radius: 600px;
+  }
+  .container {
+    .row {
+      .col-12.slider {
+        background-color: $main-color;
+        padding: 50px;
+        padding-bottom: 0;
+        border-radius: 20px;
+        color: $white-color;
+        .carousel.slide {
+          position: relative;
+          .carousel-inner {
+            .carousel-item {
+            }
+          }
+          .control {
+            width: 40px;
+            height: 40px;
+            background-color: rgba($color: $white-color, $alpha: 0.25);
+            border-radius: 50%;
+            inset: unset;
+            &.carousel-control-prev {
+              top: 40%;
+              right: -45px;
+            }
+            &.carousel-control-next {
+              top: 55%;
+              right: -45px;
+            }
+          }
+        }
+      }
+      .col-12.side-text {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        h6 {
+          color: $main-color;
+        }
+        h3 {
+          font-weight: 800;
+        }
+        p {
+          color: $p-color;
+          line-height: 1.6;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

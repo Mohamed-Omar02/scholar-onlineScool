@@ -1,0 +1,51 @@
+@use "./vars" as *;
+
+.team {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  .container {
+    .row {
+      .col-12 {
+        .card {
+          background-color: $card-color;
+          border-radius: 240px;
+          border-top-right-radius: 620px;
+          border-top-left-radius: 620px;
+          &:hover {
+            img {
+              transform: translateY(-20px);
+            }
+          }
+          img {
+            border-radius: 50%;
+            transition: $main-trans;
+          }
+          .card-body {
+            h5 {
+              color: $main-color;
+            }
+            h2 {
+              font-size: 1.75rem;
+            }
+            .social {
+              > svg {
+                padding: 7px;
+                margin: 5px;
+                width: 25px;
+                height: auto;
+                color: $main-color;
+                background-color: $white-color;
+                border-radius: 50%;
+                transition: $main-trans;
+                &:hover {
+                  background-color: $main-color;
+                  color: $white-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

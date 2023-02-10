@@ -6,16 +6,16 @@
     width: 100%;
     .navbar-collapse {
       z-index: 999;
-      .navbar-nav {
-        background-color: $main-color;
-        border-radius: 10px;
-      }
     }
 
     .nav-item {
       text-align: center;
       .nav-link {
         color: white;
+        transition: none;
+        border-radius: 10px;
+        background-color: transparent;
+        transition: background-color $main-trans;
         &.active,
         &:hover {
           background-color: rgba($color: $white-color, $alpha: 0.2);
