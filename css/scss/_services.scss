@@ -1,6 +1,6 @@
 @use "./vars" as *;
-section {
-  .services {
+
+  #services {
     margin: 20rem 0 4rem 0;
     .container {
       .row {
@@ -15,7 +15,7 @@ section {
             border-radius: 50%;
             position: absolute;
             top: 0;
-            right: 80px;
+            right: 90px;
             transform: translate(50%, -50%);
             &:hover {
               > img {
@@ -55,4 +55,3 @@ section {
       }
     }
   }
-}

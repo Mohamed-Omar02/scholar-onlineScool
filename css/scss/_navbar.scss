@@ -2,6 +2,8 @@
 .header {
   position: absolute;
   width: 100%;
+  transition: $main-trans;
+  border-radius: 25px;
   .navbar {
     width: 100%;
     .navbar-collapse {
@@ -35,6 +37,7 @@
       padding: 0;
       border: 0;
       box-shadow: none;
+      height: 40px;
       &:focus {
         box-shadow: none;
       }

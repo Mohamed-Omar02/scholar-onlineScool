@@ -2,7 +2,7 @@
 
 .testimonals {
   position: relative;
-  padding: 75px 0 75px 75px;
+  padding: 75px 0 75px 0;
   margin-bottom: 10rem;
   &:before {
     content: "";
@@ -15,12 +15,17 @@
     z-index: -1;
     border-top-left-radius: 600px;
     border-bottom-left-radius: 600px;
+    @media (max-width: 992px) {
+      width: 100%;
+      border-radius: 0;
+    }
   }
+
   .container {
     .row {
       .col-12.slider {
         background-color: $main-color;
-        padding: 50px;
+        // padding: 50px;
         padding-bottom: 0;
         border-radius: 20px;
         color: $white-color;
@@ -28,6 +33,7 @@
           position: relative;
           .carousel-inner {
             .carousel-item {
+              padding: 50px;
             }
           }
           .control {
@@ -38,11 +44,11 @@
             inset: unset;
             &.carousel-control-prev {
               top: 40%;
-              right: -45px;
+              right: -5px;
             }
             &.carousel-control-next {
               top: 55%;
-              right: -45px;
+              right: -5px;
             }
           }
         }

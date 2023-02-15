@@ -1,0 +1,100 @@
+@use "./vars" as *;
+#courses {
+  .container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    .courses-head-text {
+      > h6 {
+        color: $main-color;
+      }
+      > h1 {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .navs-tab {
+        ul {
+          li {
+            background-color: $card-color;
+            padding: 7px;
+            border-radius: 10px;
+            transition: $main-trans;
+            cursor: pointer;
+            
+            &.active {
+              background-color: $main-color;
+              color: $white-color;
+              &:hover {
+                color: $white-color;
+              }
+            }
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+    .cards {
+      .row {
+        > .col-12 {
+          .card {
+            border: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: $card-color;
+            border-radius: 20px;
+            transition: $main-trans;
+            &:hover {
+              .price-circle {
+                transform: scale(1.2);
+              }
+              .card-body h2 {
+                color: $main-color;
+              }
+            }
+            .card-img-top {
+              border-radius: 20px;
+            }
+            > button {
+              position: absolute;
+              top: 30px;
+              left: 20px;
+              border: 0;
+              padding: 5px 10px;
+              color: $main-color;
+            }
+            .price-circle {
+              background-color: #7a6ad8;
+              width: 130px;
+              height: 130px;
+              border-radius: 50%;
+              color: #fff;
+              position: absolute;
+              top: -50px;
+              right: -32px;
+              transition: $main-trans;
+              h6 {
+                font-size: 2rem;
+                margin-top: 67px;
+                margin-left: 15px;
+              }
+              em {
+                font-size: 1rem;
+                vertical-align: top;
+              }
+            }
+            .card-body {
+              min-height: 145px;
+              > h6 {
+                color: $main-color;
+              }
+              > h2 {
+                transition: $main-trans;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

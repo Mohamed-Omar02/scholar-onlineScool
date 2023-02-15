@@ -1,6 +1,6 @@
 @use "./vars" as *;
 
-.team {
+#team {
   margin-top: 10rem;
   margin-bottom: 10rem;
   .container {
@@ -28,18 +28,20 @@
               font-size: 1.75rem;
             }
             .social {
-              > svg {
-                padding: 7px;
-                margin: 5px;
-                width: 25px;
-                height: auto;
-                color: $main-color;
-                background-color: $white-color;
-                border-radius: 50%;
-                transition: $main-trans;
-                &:hover {
-                  background-color: $main-color;
-                  color: $white-color;
+              a {
+                > svg {
+                  padding: 7px;
+                  margin: 5px;
+                  border-radius: 50%;
+                  height: 25px;
+                  width: 25px;
+                  background-color: $white-color;
+                  color: $main-color;
+                  transition: $main-trans;
+                  &:hover {
+                    background-color: $main-color;
+                    color: $white-color;
+                  }
                 }
               }
             }

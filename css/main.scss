@@ -1,11 +1,14 @@
 @use "./scss/vars" as *;
-@use "./scss/global";
 @use "./scss/navbar";
 @use "./scss/landing";
 @use "./scss/services";
 @use "./scss/about-us";
-@use "./scss/coursees";
+@use "./scss/courses";
 @use "./scss/fun-facts";
 @use "./scss/team";
 @use "./scss/testimonals";
 @use "./scss/events";
+@use "./scss/contact-us";
+@use "./scss/footer";
+
+@use "./scss/global";

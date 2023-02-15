@@ -3,13 +3,15 @@
   position: relative;
   margin-top: 7rem;
   margin-bottom: 7rem;
+  width: 100%;
+  overflow-x: hidden;
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     background-color: $main-color;
-    width: 100%;
+    width: 97%;
     height: 100%;
     border-top-right-radius: 600px;
     border-bottom-right-radius: 600px;

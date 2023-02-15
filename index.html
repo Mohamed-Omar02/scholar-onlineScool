@@ -53,33 +53,52 @@
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="#" class="nav-link active text-capitalize">home</a>
+                <a
+                  href="#"
+                  class="nav-link active text-capitalize home"
+                  style="cursor: pointer"
+                  >home</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-capitalize">services</a>
+                <a href="#services" class="nav-link text-capitalize services"
+                  >services</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-capitalize">courses</a>
+                <a href="#courses" class="nav-link text-capitalize courses"
+                  >courses</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-capitalize">team</a>
+                <a href="#team" class="nav-link text-capitalize team">team</a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-capitalize">events</a>
+                <a href="#events" class="nav-link text-capitalize events"
+                  >events</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link text-capitalize">register now!</a>
+                <a
+                  href="#contact-us"
+                  class="nav-link text-capitalize contact-us"
+                  >register now!</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div class="landing">
+    <div class="landing" id="home">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="carousel slide" id="main-carousel">
+            <div
+              class="carousel slide"
+              id="main-carousel"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./images/banner-item-01.jpg" alt="" />
@@ -176,78 +195,76 @@
         </div>
       </div>
     </div>
-    <section>
-      <div class="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon">
-                  <img
-                    src="./images/service-01.png"
-                    alt=""
-                    class="img-fluid d-block"
-                  />
-                </div>
-                <div class="card-text">
-                  <h4>Online Degrees</h4>
-                  <p>
-                    Whenever you need free templates in HTML CSS, you just
-                    remember TemplateMo website.
-                  </p>
-                  <button class="btn text-capitalize rounded-pill">
-                    read more
-                  </button>
-                </div>
+    <div class="services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="icon">
+                <img
+                  src="./images/service-01.png"
+                  alt=""
+                  class="img-fluid d-block"
+                />
+              </div>
+              <div class="card-text">
+                <h4>Online Degrees</h4>
+                <p>
+                  Whenever you need free templates in HTML CSS, you just
+                  remember TemplateMo website.
+                </p>
+                <button class="btn text-capitalize rounded-pill">
+                  read more
+                </button>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon">
-                  <img
-                    src="./images/service-02.png"
-                    alt=""
-                    class="img-fluid d-block"
-                  />
-                </div>
-                <div class="card-text">
-                  <h4>Online Degrees</h4>
-                  <p>
-                    Whenever you need free templates in HTML CSS, you just
-                    remember TemplateMo website.
-                  </p>
-                  <button class="btn text-capitalize rounded-pill">
-                    read more
-                  </button>
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="icon">
+                <img
+                  src="./images/service-02.png"
+                  alt=""
+                  class="img-fluid d-block"
+                />
+              </div>
+              <div class="card-text">
+                <h4>Online Degrees</h4>
+                <p>
+                  Whenever you need free templates in HTML CSS, you just
+                  remember TemplateMo website.
+                </p>
+                <button class="btn text-capitalize rounded-pill">
+                  read more
+                </button>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon">
-                  <img
-                    src="./images/service-03.png"
-                    alt=""
-                    class="img-fluid d-block"
-                  />
-                </div>
-                <div class="card-text">
-                  <h4>Online Degrees</h4>
-                  <p>
-                    Whenever you need free templates in HTML CSS, you just
-                    remember TemplateMo website.
-                  </p>
-                  <button class="btn text-capitalize rounded-pill">
-                    read more
-                  </button>
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-card">
+              <div class="icon">
+                <img
+                  src="./images/service-03.png"
+                  alt=""
+                  class="img-fluid d-block"
+                />
+              </div>
+              <div class="card-text">
+                <h4>Online Degrees</h4>
+                <p>
+                  Whenever you need free templates in HTML CSS, you just
+                  remember TemplateMo website.
+                </p>
+                <button class="btn text-capitalize rounded-pill">
+                  read more
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="about-us">
+    </div>
+    <div class="about-us" id="about-us">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 accordionn">
@@ -355,17 +372,17 @@
         </div>
       </div>
     </div>
-    <div class="courses">
+    <div class="courses" id="courses">
       <div class="container">
         <div class="courses-head-text text-center">
           <h6 class="text-uppercase">latest courses</h6>
           <h1 class="text-capitalize my-4">latest courses</h1>
           <div class="navs-tab">
             <ul class="list-unstyled d-flex justify-content-center">
-              <li class="text-capitalize active">show all</li>
-              <li class="text-capitalize">web design</li>
-              <li class="text-capitalize">development</li>
-              <li class="text-capitalize">wordpress</li>
+              <li class="mx-md-1 active">Show All</li>
+              <li class="mx-md-1">Web Design</li>
+              <li class="mx-md-1">Development</li>
+              <li class="mx-md-1">Wordpress</li>
             </ul>
           </div>
         </div>
@@ -412,7 +429,7 @@
                   alt="course"
                   class="card-img-top"
                 />
-                <button class="rounded-pill text-uppercase">webdesign</button>
+                <button class="rounded-pill text-uppercase">Wordpress</button>
                 <div class="price-circle">
                   <h6><em>$</em>640</h6>
                 </div>
@@ -422,14 +439,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 my-3" data-type="development">
+            <div class="col-12 col-md-6 col-lg-4 my-3" data-type="Development">
               <div class="card">
                 <img
                   src="./images/course-04.jpg"
                   alt="course"
                   class="card-img-top"
                 />
-                <button class="rounded-pill text-uppercase">webdesign</button>
+                <button class="rounded-pill text-uppercase">Development</button>
                 <div class="price-circle">
                   <h6><em>$</em>450</h6>
                 </div>
@@ -456,7 +473,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 my-3" data-type="webdesign">
+            <div class="col-12 col-md-6 col-lg-4 my-3" data-type="Web Design">
               <div class="card">
                 <img
                   src="./images/course-06.jpg"
@@ -485,19 +502,19 @@
               <div class="row text-center">
                 <div class="col-12 col-lg-3 my-3">
                   <div class="text">
-                    <h1 class="">150+</h1>
+                    <h1 data-max="150">0+</h1>
                     <p class="text-capitalize mx-3 mx-lg-0">happy students</p>
                   </div>
                 </div>
                 <div class="col-12 col-lg-3 my-3">
                   <div class="text">
-                    <h1 class="">804+</h1>
+                    <h1 data-max="804">0+</h1>
                     <p class="text-capitalize mx-3 mx-lg-0">course hours</p>
                   </div>
                 </div>
                 <div class="col-12 col-lg-3 my-3">
                   <div class="text">
-                    <h1 class="">50+</h1>
+                    <h1 data-max="50">0+</h1>
                     <p class="text-capitalize mx-3 mx-lg-0">
                       employed students
                     </p>
@@ -505,7 +522,7 @@
                 </div>
                 <div class="col-12 col-lg-3 my-3">
                   <div class="text">
-                    <h1 class="">15+</h1>
+                    <h1 data-max="15">0+</h1>
                     <p class="text-capitalize mx-3 mx-lg-0">years experience</p>
                   </div>
                 </div>
@@ -515,10 +532,10 @@
         </div>
       </div>
     </div>
-    <div class="team">
+    <div class="team" id="team">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 my-5 my-lg-0">
             <div class="card border-0">
               <img
                 src="./images/member-01.jpg"
@@ -529,14 +546,29 @@
                 <h5 class="text-capitalize">UX Teacher</h5>
                 <h2 class="member-name">Sophia Rose</h2>
                 <div class="social d-flex justify-content-center">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 my-5 my-lg-0">
             <div class="card border-0">
               <img
                 src="./images/member-02.jpg"
@@ -547,14 +579,29 @@
                 <h5 class="text-capitalize">Graphic Teacher</h5>
                 <h2 class="member-name">Cindy Walker</h2>
                 <div class="social d-flex justify-content-center">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 my-5 my-lg-0">
             <div class="card border-0">
               <img
                 src="./images/member-03.jpg"
@@ -565,14 +612,29 @@
                 <h5 class="text-capitalize">Full Stack Master</h5>
                 <h2 class="member-name">David Hutson</h2>
                 <div class="social d-flex justify-content-center">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 my-5 my-lg-0">
             <div class="card border-0">
               <img
                 src="./images/member-04.jpg"
@@ -583,9 +645,24 @@
                 <h5 class="text-capitalize">Digital Animator</h5>
                 <h2 class="member-name">Stella Blair</h2>
                 <div class="social d-flex justify-content-center">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-github"></i>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href="https://github.com/Mohamed-Omar02?tab=repositories"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -601,10 +678,9 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <h4>
-                    ‘‘Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Qui iste labore, eligendi est quo consequuntur unde repellat
-                    odio eaque laudantium, fugiat aliquid laboriosam non magnam
-                    quis totam placeat odit natus!’’
+                    ‘‘Scholar is free website template provided by TemplateMo
+                    for educational related websites. This CSS layout is based
+                    on Bootstrap v5.3.0 framework.’’
                   </h4>
                   <div class="photo-desc my-5">
                     <div class="row align-content-center">
@@ -626,10 +702,9 @@
                 </div>
                 <div class="carousel-item">
                   <h4>
-                    ‘‘Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Qui iste labore, eligendi est quo consequuntur unde repellat
-                    odio eaque laudantium, fugiat aliquid laboriosam non magnam
-                    quis totam placeat odit natus!’’
+                    ‘‘Scholar is free website template provided by TemplateMo
+                    for educational related websites. This CSS layout is based
+                    on Bootstrap v5.3.0 framework.’’
                   </h4>
                   <div class="photo-desc my-5">
                     <div class="row align-content-center">
@@ -651,10 +726,9 @@
                 </div>
                 <div class="carousel-item">
                   <h4>
-                    ‘‘Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Qui iste labore, eligendi est quo consequuntur unde repellat
-                    odio eaque laudantium, fugiat aliquid laboriosam non magnam
-                    quis totam placeat odit natus!’’
+                    ‘‘Scholar is free website template provided by TemplateMo
+                    for educational related websites. This CSS layout is based
+                    on Bootstrap v5.3.0 framework.’’
                   </h4>
                   <div class="photo-desc my-5">
                     <div class="row align-content-center">
@@ -676,10 +750,9 @@
                 </div>
                 <div class="carousel-item">
                   <h4>
-                    ‘‘Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Qui iste labore, eligendi est quo consequuntur unde repellat
-                    odio eaque laudantium, fugiat aliquid laboriosam non magnam
-                    quis totam placeat odit natus!’’
+                    ‘‘Scholar is free website template provided by TemplateMo
+                    for educational related websites. This CSS layout is based
+                    on Bootstrap v5.3.0 framework.’’
                   </h4>
                   <div class="photo-desc my-5">
                     <div class="row align-content-center">
@@ -730,9 +803,188 @@
         </div>
       </div>
     </div>
-    <div class="events">
-      
+    <div class="events" id="events">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-5">
+            <h6 class="text-uppercase mb-3">schedule</h6>
+            <h1 class="text-capitalize mb-5">upcoming events</h1>
+          </div>
+          <div class="col-12">
+            <div class="item">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="img">
+                    <img src="./images/event-01.jpg" alt="event" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6 class="text-uppercase">web design</h6>
+                      <h2 class="text-capitalize">ui best practices</h2>
+                      <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <hr />
+                    <div class="col-12 d-flex flex-row justify-content-between">
+                      <div class="date">
+                        <p>Date: <br /><span>16 FEB 2036</span></p>
+                      </div>
+                      <div class="duration">
+                        <p>Duration: <br /><span>22 Hours</span></p>
+                      </div>
+                      <div class="price">
+                        <p>Price: <br /><span>$120</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="item">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="img">
+                    <img src="./images/event-02.jpg" alt="event" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6 class="text-uppercase">FRONT END</h6>
+                      <h2 class="text-capitalize">New Design Trend</h2>
+                      <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <hr />
+                    <div class="col-12 d-flex flex-row justify-content-between">
+                      <div class="date">
+                        <p>Date: <br /><span>16 Mar 2036</span></p>
+                      </div>
+                      <div class="duration">
+                        <p>Duration: <br /><span>50 Hours</span></p>
+                      </div>
+                      <div class="price">
+                        <p>Price: <br /><span>$450</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="item">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div class="img">
+                    <img src="./images/event-01.jpg" alt="event" />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12">
+                      <h6 class="text-uppercase">FULL STACK</h6>
+                      <h2 class="text-capitalize">Web Programming</h2>
+                      <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                    <hr />
+                    <div class="col-12 d-flex flex-row justify-content-between">
+                      <div class="date">
+                        <p>Date: <br /><span>16 June 2036</span></p>
+                      </div>
+                      <div class="duration">
+                        <p>Duration: <br /><span>40 Hours</span></p>
+                      </div>
+                      <div class="price">
+                        <p>Price: <br /><span>$320</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="contact-us" id="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="text pe-1">
+              <h6 class="text-uppercase">contact-us</h6>
+              <h1 class="text-capitalize my-5">
+                Feel Free To Contact Us Anytime
+              </h1>
+              <p>
+                Thank you for choosing our templates. We provide you best CSS
+                templates at absolutely 100% free of charge. You may support us
+                by sharing our website to your friends.
+              </p>
+              <div class="offer my-5">
+                <div class="start">
+                  <span>OFF</span>
+                  <span>50%</span>
+                </div>
+                <div class="center">
+                  <h6>VALID: <span>24 APRIL 2036 </span></h6>
+                  <h3>Special Offer <span> 50% </span> OFF!</h3>
+                </div>
+                <div class="end">
+                  <a href="#"> <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <form action="">
+              <div class="mb-3">
+                <input
+                  type="text "
+                  class="form-control rounded-pill"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text "
+                  class="form-control rounded-pill"
+                  placeholder="Your E-mail"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  name="desc"
+                  id=""
+                  cols="20"
+                  rows="10"
+                  class="form-control border-1"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <div class="mb-0">
+                <input
+                  type="submit"
+                  value="Send Message Now"
+                  class="btn btn-light"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>
+          Copyright © 2036 Scholar Organization. All rights reserved.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design:
+          <a href="#">M.Omar</a>
+        </p>
+      </div>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/main.js"></script>
