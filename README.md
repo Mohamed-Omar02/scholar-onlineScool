@@ -1,3 +1,3 @@
 # scholar-onlineScool
 
-##for live view >>[live](https://relaxed-bublanina-0f1cdf.netlify.app/)
+##for live view >>[live](https://magical-rolypoly-7ce2ef.netlify.app/)
